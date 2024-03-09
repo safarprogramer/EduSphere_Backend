@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        text-align: center;
+        padding: 20px;
+      }
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+      }
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: #37a39a;
+      }
+      .message {
+        font-size: 16px;
+        margin: 20px 0;
+      }
+      .activation-code {
+        font-size: 28px;
+        font-weight: bold;
+        color: #37a39a;
+      }
+      .validity-message {
+        font-size: 14px;
+        color: #888;
+        margin-top: 10px;
+      }
+      .footer {
+        font-size: 12px;
+        color: #888;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">EduSphere</div>
+      <p class="message">
+        Welcome to EduSphere! To activate your account, please use the activation
+        code below:
+      </p>
+      <p class="activation-code"><%= activationCode %></p>
+      <p class="validity-message">
+        This activation code is valid for 5 minutes.
+      </p>
+      <p class="footer">
+        Thank you for choosing EduSphere. If you have any questions or need
+        assistance, please contact our support team.
+      </p>
+    </div>
+  </body>
+</html>
